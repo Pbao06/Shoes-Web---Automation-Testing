@@ -1,11 +1,9 @@
 package com.example.testing;
 import com.example.page.*;
-
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import static org.testng.Assert.*;
+@Test(groups = {"regression"})
 public class RegisterTest extends BaseTest {
     @DataProvider(name = "registerErrorData")
     public Object[][] getRegisterErrorData()

@@ -7,7 +7,6 @@ import java.time.Duration;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -30,6 +29,10 @@ public class BasePage {
     protected WebElement waitForClickable(By locator) {
         return wait.until(ExpectedConditions.elementToBeClickable(locator));
     }
+    protected void  clickHasWait(By locator)
+    {
+        waitForClickable(locator).click();
+    }
     protected void TypeClick(By locator)
     {
         driver.findElement(locator).click();
@@ -38,6 +41,14 @@ public class BasePage {
     {
           driver.findElement(locator).sendKeys(value);
     }
+    protected void presenceOfElementLocatedSendData(By locator , String value)
+    {
+        presenceOfElementLocated(locator).sendKeys(value);
+    }
+    protected WebElement presenceOfElementLocated(By locator)
+    {
+        return wait.until(ExpectedConditions.presenceOfElementLocated(locator));
+    }
     protected void visiableToSendData(By locator, String value)
     {
         waitForVisible(locator).sendKeys(value);
@@ -45,14 +56,21 @@ public class BasePage {
     protected void visiableClearThenSendData(By locator,String value)
     {
          WebElement element = waitForVisible(locator);
-    element.click();
-    
-    // Bôi đen tất cả và xóa (Dùng COMMAND cho macOS, CONTROL cho Windows/Linux)
-    String osName = System.getProperty("os.name").toLowerCase();
-    Keys controlOrCommand = osName.contains("mac") ? Keys.COMMAND : Keys.CONTROL;
-    
-    element.sendKeys(Keys.chord(controlOrCommand, "a"), Keys.BACK_SPACE);
-    element.sendKeys(value);
+            element.click();
+            
+            // Bôi đen tất cả và xóa (Dùng COMMAND cho macOS, CONTROL cho Windows/Linux)
+            String osName = System.getProperty("os.name").toLowerCase();
+            Keys controlOrCommand = osName.contains("mac") ? Keys.COMMAND : Keys.CONTROL;
+            
+            element.sendKeys(Keys.chord(controlOrCommand, "a"), Keys.BACK_SPACE);
+            element.sendKeys(value);
+    }
+    protected void SelectOption(By selectLocator, String optionPattern ,String value )
+    {
+        waitForVisible(selectLocator).click();
+        String validString=String.format(optionPattern,value);
+        By optionElement =By.xpath(validString);
+        waitForVisible(optionElement).click();
     }
     protected void uploadFile(By locator, String filePath) {
         // Step 1: Wait for element to exist in DOM (even if hidden via CSS)

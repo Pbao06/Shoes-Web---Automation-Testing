@@ -46,7 +46,7 @@ public class ProductEdit extends BasePage {
     {
         super(driver);
     }
-    public Products EditProduct(ProductEditClass data) {
+    public ProductsAdminPage EditProduct(ProductEditClass data) {
         visiableClearThenSendData(ip_ProductName, data.getProductName());
         visiableClearThenSendData(ip_Slug, data.getSlug());
         visiableClearThenSendData(ip_Desciption, data.getDescription());
@@ -64,7 +64,7 @@ public class ProductEdit extends BasePage {
         // instead of waiting for url we wait element 
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//tr[@data-testid='product-row-2']")));
         
-        return new Products(driver);
+        return new ProductsAdminPage(driver);
     }
     public void clickSelectBrand(String value)
     {

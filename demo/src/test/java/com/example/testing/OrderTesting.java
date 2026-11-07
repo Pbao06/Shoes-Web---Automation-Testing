@@ -2,15 +2,13 @@ package com.example.testing;
 
 import com.example.page.*;
 import com.example.models.*;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import static org.testng.Assert.*;
 
 
-public class OrderTesting extends BaseTest
-{
+@Test(groups = {"regression"})
+public class OrderTesting extends BaseTest {
     @DataProvider(name = "CheckoutValidData")
     public Object[][] getRegisterErrorData()
      {

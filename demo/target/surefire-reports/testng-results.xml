@@ -2,24 +2,37 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-09-18T15:25:19 GMT+07:00" name="Selenium Test Suite" finished-at="2026-09-18T15:25:48 GMT+07:00" duration-ms="28510">
+  <suite started-at="2026-10-30T11:00:03 GMT+07:00" name="Surefire suite" finished-at="2026-10-30T11:00:43 GMT+07:00" duration-ms="40180">
     <groups>
+      <group name="regression">
+        <method signature="ProductNewTest.TestingSmoke(com.example.models.admin.NewProduct)[pri:0, instance:com.example.testing.admin.ProductNewTest@780cb77]" name="TestingSmoke" class="com.example.testing.admin.ProductNewTest"/>
+      </group> <!-- regression -->
+      <group name="admin">
+        <method signature="ProductNewTest.TestingSmoke(com.example.models.admin.NewProduct)[pri:0, instance:com.example.testing.admin.ProductNewTest@780cb77]" name="TestingSmoke" class="com.example.testing.admin.ProductNewTest"/>
+      </group> <!-- admin -->
     </groups>
-    <test started-at="2026-09-18T15:25:19 GMT+07:00" name="Login Tests" finished-at="2026-09-18T15:25:48 GMT+07:00" duration-ms="28510">
-      <class name="com.example.testing.LoginTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.testing.LoginTest@6dbb137d]" started-at="2026-09-18T15:25:19 GMT+07:00" name="setUp" finished-at="2026-09-18T15:25:39 GMT+07:00" duration-ms="19934" status="PASS">
+    <test started-at="2026-10-30T11:00:03 GMT+07:00" name="Surefire test" finished-at="2026-10-30T11:00:43 GMT+07:00" duration-ms="40180">
+      <class name="com.example.testing.admin.ProductNewTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.testing.admin.ProductNewTest@780cb77]" started-at="2026-10-30T11:00:03 GMT+07:00" name="setUp" finished-at="2026-10-30T11:00:08 GMT+07:00" duration-ms="4531" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="SuccessLogin()[pri:0, instance:com.example.testing.LoginTest@6dbb137d]" started-at="2026-09-18T15:25:39 GMT+07:00" name="SuccessLogin" finished-at="2026-09-18T15:25:46 GMT+07:00" duration-ms="6192" status="PASS">
+        <test-method signature="TestingSmoke(com.example.models.admin.NewProduct)[pri:0, instance:com.example.testing.admin.ProductNewTest@780cb77]" started-at="2026-10-30T11:00:08 GMT+07:00" name="TestingSmoke" data-provider="DataProductNew" finished-at="2026-10-30T11:00:43 GMT+07:00" duration-ms="34736" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.example.models.admin.NewProduct@15cafec7]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- SuccessLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.testing.LoginTest@6dbb137d]" started-at="2026-09-18T15:25:46 GMT+07:00" name="tearDown" finished-at="2026-09-18T15:25:48 GMT+07:00" duration-ms="2204" status="PASS">
+        </test-method> <!-- TestingSmoke -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.testing.admin.ProductNewTest@780cb77]" started-at="2026-10-30T11:00:43 GMT+07:00" name="tearDown" finished-at="2026-10-30T11:00:43 GMT+07:00" duration-ms="795" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.example.testing.LoginTest -->
-    </test> <!-- Login Tests -->
-  </suite> <!-- Selenium Test Suite -->
+      </class> <!-- com.example.testing.admin.ProductNewTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
 </testng-results>

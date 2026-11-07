@@ -1,17 +1,12 @@
 package com.example.testing;
 
-import org.openqa.selenium.support.ui.WebDriverWait;
 import com.example.page.*;
 import com.example.models.*;
-
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import static org.testng.Assert.*;
 
+@Test(groups = {"regression"})
 public class CheckoutTest extends BaseTest {
 
     @DataProvider(name = "CheckoutErrorData")

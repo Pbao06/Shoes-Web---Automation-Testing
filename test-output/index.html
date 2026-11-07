@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 5 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Verify_Groups" class="navigator-link">
+              <span class="suite-name border-failed">Verify Groups</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Verify_Groups" class="navigator-link ">
+                    <span>C:\temp\kilo\all-groups.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Verify_Groups" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Verify_Groups" class="navigator-link ">
+                    <span>3 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Verify_Groups" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Verify_Groups" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Verify_Groups" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Verify_Groups" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">5 methods, 5 failed,   </span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Verify_Groups" class="hide-methods failed suite-Verify_Groups"> (hide)</a> <!-- hide-methods failed suite-Verify_Groups -->
+                      <a href="#" panel-name="suite-Verify_Groups" class="show-methods failed suite-Verify_Groups"> (show)</a> <!-- show-methods failed suite-Verify_Groups -->
+                    </span>
+                    <div class="method-list-content failed suite-Verify_Groups">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Verify_Groups" title="com.example.testing.admin.ProductEdit" class="method navigator-link" hash-for-method="HappyPath(com.example.models.admin.ProductEditClass@644baf4a)">HappyPath(com.example.models.admin.ProductEditClass@644baf4a)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Verify_Groups" title="com.example.testing.admin.ProductNewTest" class="method navigator-link" hash-for-method="TestingSmoke(com.example.models.admin.NewProduct@7526515b)">TestingSmoke(com.example.models.admin.NewProduct@7526515b)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Verify_Groups" title="com.example.testing.admin.DashBoardTest" class="method navigator-link" hash-for-method="check">check</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Verify_Groups" title="com.example.testing.admin.OrderTest" class="method navigator-link" hash-for-method="check_Url">check_Url</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Verify_Groups" title="com.example.testing.admin.ProductsTest" class="method navigator-link" hash-for-method="deleteProduct">deleteProduct</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Verify_Groups -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Verify_Groups" class="panel Verify_Groups">
+          <div class="suite-Verify_Groups-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.example.testing.admin.ProductEdit</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="HappyPath(com.example.models.admin.ProductEditClass@644baf4a)">
+                  </a> <!-- HappyPath(com.example.models.admin.ProductEditClass@644baf4a) -->
+                  <span class="method-name">HappyPath</span>
+                  <span class="parameters">(com.example.models.admin.ProductEditClass@644baf4a)</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at com.example.testing.BaseTest.openUrl(BaseTest.java:42)
+	at com.example.testing.admin.ProductEdit.HappyPath(ProductEdit.java:46)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 24 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Verify_Groups-class-failed -->
+          <div class="suite-Verify_Groups-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.example.testing.admin.ProductNewTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TestingSmoke(com.example.models.admin.NewProduct@7526515b)">
+                  </a> <!-- TestingSmoke(com.example.models.admin.NewProduct@7526515b) -->
+                  <span class="method-name">TestingSmoke</span>
+                  <span class="parameters">(com.example.models.admin.NewProduct@7526515b)</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)&quot; because &quot;this.driver&quot; is null
+	at com.example.page.BasePage.TypeInput(BasePage.java:39)
+	at com.example.page.LoginPage.typeLogin(LoginPage.java:22)
+	at com.example.testing.admin.ProductNewTest.TestingSmoke(ProductNewTest.java:46)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 24 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Verify_Groups-class-failed -->
+          <div class="suite-Verify_Groups-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.example.testing.admin.ProductsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteProduct">
+                  </a> <!-- deleteProduct -->
+                  <span class="method-name">deleteProduct</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at com.example.testing.BaseTest.openUrl(BaseTest.java:42)
+	at com.example.testing.admin.ProductsTest.deleteProduct(ProductsTest.java:17)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 24 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Verify_Groups-class-failed -->
+          <div class="suite-Verify_Groups-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.example.testing.admin.OrderTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="check_Url">
+                  </a> <!-- check_Url -->
+                  <span class="method-name">check_Url</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at com.example.testing.BaseTest.openUrl(BaseTest.java:42)
+	at com.example.testing.admin.OrderTest.check_Url(OrderTest.java:17)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 24 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Verify_Groups-class-failed -->
+          <div class="suite-Verify_Groups-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.example.testing.admin.DashBoardTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="check">
+                  </a> <!-- check -->
+                  <span class="method-name">check</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at com.example.testing.BaseTest.openUrl(BaseTest.java:42)
+	at com.example.testing.admin.DashBoardTest.check(DashBoardTest.java:18)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 24 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Verify_Groups-class-failed -->
+        </div> <!-- panel Verify_Groups -->
+        <div panel-name="test-xml-Verify_Groups" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\temp\kilo\all-groups.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Verify Groups&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;groups&gt;
+    &lt;run&gt;
+      &lt;include name=&quot;admin&quot;/&gt;
+    &lt;/run&gt;
+  &lt;/groups&gt;
+  &lt;groups&gt;
+    &lt;run&gt;
+      &lt;include name=&quot;admin&quot;/&gt;
+    &lt;/run&gt;
+  &lt;/groups&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Smoke&quot;&gt;
+    &lt;groups&gt;
+      &lt;run&gt;
+        &lt;include name=&quot;admin&quot;/&gt;
+      &lt;/run&gt;
+    &lt;/groups&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.example.testing.LoginTest&quot;/&gt;
+      &lt;class name=&quot;com.example.testing.RegisterTest&quot;/&gt;
+      &lt;class name=&quot;com.example.testing.CheckoutTest&quot;/&gt;
+      &lt;class name=&quot;com.example.testing.OrderTesting&quot;/&gt;
+      &lt;class name=&quot;com.example.testing.HomeTest&quot;/&gt;
+      &lt;class name=&quot;com.example.testing.SearchTest&quot;/&gt;
+      &lt;class name=&quot;com.example.testing.ProductDetailTest&quot;/&gt;
+      &lt;class name=&quot;com.example.testing.CustomerFlowTesting&quot;/&gt;
+      &lt;class name=&quot;com.example.testing.admin.OrderTest&quot;/&gt;
+      &lt;class name=&quot;com.example.testing.admin.ProductsTest&quot;/&gt;
+      &lt;class name=&quot;com.example.testing.admin.ProductEdit&quot;/&gt;
+      &lt;class name=&quot;com.example.testing.admin.ProductNewTest&quot;/&gt;
+      &lt;class name=&quot;com.example.testing.admin.DashBoardTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Smoke --&gt;
+&lt;/suite&gt; &lt;!-- Verify Groups --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Verify_Groups" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Verify Groups</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Smoke (13 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Verify_Groups" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Verify Groups</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">admin</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">HappyPath</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">TestingSmoke</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">check</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">check_Url</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">deleteProduct</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">regression</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">HappyPath</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">TestingSmoke</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">check</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">check_Url</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">deleteProduct</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">smoke</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">check</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Verify_Groups" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Verify Groups</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Verify_Groups');
+function tableData_Verify_Groups() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(5);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'check_Url')
+data.setCell(0, 2, 'com.example.testing.admin.OrderTest')
+data.setCell(0, 3, 54);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'TestingSmoke')
+data.setCell(1, 2, 'com.example.testing.admin.ProductNewTest')
+data.setCell(1, 3, 50);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'HappyPath')
+data.setCell(2, 2, 'com.example.testing.admin.ProductEdit')
+data.setCell(2, 3, 2);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'deleteProduct')
+data.setCell(3, 2, 'com.example.testing.admin.ProductsTest')
+data.setCell(3, 3, 1);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'check')
+data.setCell(4, 2, 'com.example.testing.admin.DashBoardTest')
+data.setCell(4, 3, 1);
+window.suiteTableData['Verify_Groups']= { tableData: data, tableDiv: 'times-div-Verify_Groups'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 108 ms</span>
+              <div id="times-div-Verify_Groups">
+              </div> <!-- times-div-Verify_Groups -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Verify_Groups" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Verify Groups</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Verify_Groups" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">11 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.example.testing.SearchTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">search_specific</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.example.testing.HomeTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">search_page</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.example.testing.CheckoutTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">Checkout_Success_test</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.example.testing.OrderTesting</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">order_Test_Tab</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.example.testing.RegisterTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">TestRegisterErrors</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.example.testing.CustomerFlowTesting</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">testLoginAndAddToCart</span>
+                <br/>
+                <span class="ignored-method-name">testVerifyCartBadgeIncrement</span>
+                <br/>
+                <span class="ignored-method-name">testSubmitOrderAndVerifyError</span>
+                <br/>
+                <span class="ignored-method-name">testNavigateToCheckout</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.example.testing.LoginTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">SuccessLogin</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.example.testing.ProductDetailTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">Flow_AddToCart_</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Verify_Groups" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.example.testing.admin.OrderTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">check_Url</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.example.testing.admin.ProductsTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">deleteProduct</span>
+                <span class="method-start">90 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.example.testing.admin.ProductEdit</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">HappyPath(com.example.models.admin.ProductEditClass@644baf4a)</span>
+                <span class="method-start">117 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.example.testing.admin.ProductNewTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TestingSmoke(com.example.models.admin.NewProduct@7526515b)</span>
+                <span class="method-start">124 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.example.testing.admin.DashBoardTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">check</span>
+                <span class="method-start">183 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

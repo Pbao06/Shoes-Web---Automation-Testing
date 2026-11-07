@@ -1,9 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Selenium Test Suite">
-    <test name="Login Tests">
+<suite name="Big Shoes Automation Suite" preserve-order="true">
+
+    <!--
+        Smoke tests: Quick verification of critical user flows.
+        Run: mvn test (default, runs everything) or mvn test -Dgroups=smoke
+    -->
+    <test name="Smoke Tests">
+        <groups>
+            <run>
+                <include name="smoke"/>
+            </run>
+        </groups>
         <classes>
             <class name="com.example.testing.LoginTest"/>
+            <class name="com.example.testing.SearchTest"/>
+            <class name="com.example.testing.ProductDetailTest"/>
+            <class name="com.example.testing.admin.DashBoardTest"/>
         </classes>
     </test>
+
+    <!--
+        User regression tests: Full user-facing flows and validation suites.
+    -->
+    <test name="User Regression">
+        <groups>
+            <run>
+                <include name="regression"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.example.testing.RegisterTest"/>
+            <class name="com.example.testing.HomeTest"/>
+            <class name="com.example.testing.CheckoutTest"/>
+            <class name="com.example.testing.OrderTesting"/>
+            <class name="com.example.testing.CustomerFlowTesting"/>
+        </classes>
+    </test>
+
+    <!--
+        Admin panel regression tests.
+    -->
+    <test name="Admin Regression">
+        <groups>
+            <run>
+                <include name="admin"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.example.testing.admin.OrderTest"/>
+            <class name="com.example.testing.admin.ProductsTest"/>
+            <class name="com.example.testing.admin.ProductEdit"/>
+            <class name="com.example.testing.admin.ProductNewTest"/>
+        </classes>
+    </test>
+
 </suite>

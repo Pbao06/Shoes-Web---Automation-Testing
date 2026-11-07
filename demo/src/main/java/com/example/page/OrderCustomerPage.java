@@ -75,8 +75,6 @@ public class OrderCustomerPage extends BasePage
             if (!error.equals("no orders in this category.")) {
                 return false;
             }
-
-
         }
         if(!status.equals(shipped))
         {

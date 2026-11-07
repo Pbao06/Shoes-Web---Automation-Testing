@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Big Shoes Automation Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" name="Smoke Tests(failed)" verbose="0">
+    <groups>
+      <run>
+        <include name="smoke"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.example.testing.ProductDetailTest">
+        <methods>
+          <include name="Flow_AddToCart_"/>
+        </methods>
+      </class> <!-- com.example.testing.ProductDetailTest -->
+      <class name="com.example.testing.LoginTest">
+        <methods>
+          <include name="SuccessLogin"/>
+        </methods>
+      </class> <!-- com.example.testing.LoginTest -->
+      <class name="com.example.testing.SearchTest">
+        <methods>
+          <include name="search_specific"/>
+        </methods>
+      </class> <!-- com.example.testing.SearchTest -->
+      <class name="com.example.testing.admin.DashBoardTest">
+        <methods>
+          <include name="check"/>
+        </methods>
+      </class> <!-- com.example.testing.admin.DashBoardTest -->
+    </classes>
+  </test> <!-- Smoke Tests(failed) -->
+  <test thread-count="5" name="User Regression(failed)" verbose="0">
+    <groups>
+      <run>
+        <include name="regression"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.example.testing.CheckoutTest">
+        <methods>
+          <include name="Checkout_Success_test" invocation-numbers="0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18"/>
+        </methods>
+      </class> <!-- com.example.testing.CheckoutTest -->
+      <class name="com.example.testing.CustomerFlowTesting">
+        <methods>
+          <include name="testNavigateToCheckout"/>
+          <include name="testSubmitOrderAndVerifyError"/>
+          <include name="testVerifyCartBadgeIncrement"/>
+          <include name="testLoginAndAddToCart"/>
+        </methods>
+      </class> <!-- com.example.testing.CustomerFlowTesting -->
+      <class name="com.example.testing.OrderTesting">
+        <methods>
+          <include name="order_Test_Tab" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.example.testing.OrderTesting -->
+      <class name="com.example.testing.RegisterTest">
+        <methods>
+          <include name="TestRegisterErrors" invocation-numbers="0 1 2"/>
+        </methods>
+      </class> <!-- com.example.testing.RegisterTest -->
+      <class name="com.example.testing.HomeTest">
+        <methods>
+          <include name="search_page"/>
+        </methods>
+      </class> <!-- com.example.testing.HomeTest -->
+    </classes>
+  </test> <!-- User Regression(failed) -->
+  <test thread-count="5" name="Admin Regression(failed)" verbose="0">
+    <groups>
+      <run>
+        <include name="admin"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.example.testing.admin.ProductsTest">
+        <methods>
+          <include name="deleteProduct"/>
+        </methods>
+      </class> <!-- com.example.testing.admin.ProductsTest -->
+      <class name="com.example.testing.admin.ProductEdit">
+        <methods>
+          <include name="HappyPath" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.example.testing.admin.ProductEdit -->
+      <class name="com.example.testing.admin.ProductNewTest">
+        <methods>
+          <include name="TestingSmoke" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.example.testing.admin.ProductNewTest -->
+      <class name="com.example.testing.admin.OrderTest">
+        <methods>
+          <include name="check_Url"/>
+        </methods>
+      </class> <!-- com.example.testing.admin.OrderTest -->
+    </classes>
+  </test> <!-- Admin Regression(failed) -->
+</suite> <!-- Failed suite [Big Shoes Automation Suite] -->

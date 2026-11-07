@@ -7,6 +7,7 @@ import org.testng.annotations.Test;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import static org.testng.Assert.*;
 
+@Test(groups = {"smoke", "regression"})
 public class LoginTest extends BaseTest {
     @Test
     public void SuccessLogin() {
